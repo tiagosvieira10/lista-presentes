@@ -41,6 +41,7 @@ main {
     margin-top: 20px;
     align-items: center;
     justify-content: center;
+    max-width: 900px;
 
     flex-wrap: wrap;
     gap: 15px;    
