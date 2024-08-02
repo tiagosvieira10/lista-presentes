@@ -172,6 +172,10 @@ main {
 
       object-fit: contain;
     }
+
+    button {
+      background-color: #680000; 
+    }
   }
 
   a {
