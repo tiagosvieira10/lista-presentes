@@ -104,7 +104,7 @@ main {
     justify-content: space-between;
     flex-direction: column;
     width: 160px;
-    height: 250px;
+    height: 260px;
 
     border: 1px solid #B3C3D5;
   
@@ -143,7 +143,7 @@ main {
     justify-content: space-between;
     flex-direction: column;
     width: 160px;
-    height: 250px;
+    height: 260px;
 
     border: 1px solid #680000;
   
@@ -184,7 +184,7 @@ main {
     width: 100%;
     button {
       border: none;
-      padding: 15px;
+      padding: 20px;
       border-radius: 0 0 10px 10px;
       margin-top: -15px;
       font-weight: 500;
