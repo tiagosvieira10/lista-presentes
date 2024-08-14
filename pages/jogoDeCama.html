@@ -1,0 +1,44 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/mesa.css">
+  <title>Tiago & Vitoria</title>
+</head>
+<body>
+  <main>
+    <img src="/img/qrCode/qrcode.jpeg" alt="">
+
+    <div class="texto">
+      <h4>Chave Aleatória:</h4>
+      <p id="textoParaCopiar">00020101021126720014br.gov.bcb.pix013680ffefbf-49ac-4a58-8404-ad6d0b2082f70210JogoDeCama5204000053039865406550.005802BR5921VITORIA I A RODRIGUES6008OURICURI62070503***630411C9</p>
+      <button onclick="copiarTexto()">Copiar Chave</button>
+    </div>
+    
+    <script>
+      function copiarTexto() {
+          // Seleciona o elemento de texto
+          var texto = document.getElementById("textoParaCopiar").innerText;
+
+          // Cria um elemento de input temporário
+          var inputTemporario = document.createElement("input");
+          inputTemporario.value = texto;
+          document.body.appendChild(inputTemporario);
+
+          // Seleciona o conteúdo do input temporário
+          inputTemporario.select();
+          inputTemporario.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+          // Copia o texto selecionado para a área de transferência
+          document.execCommand("copy");
+
+          // Remove o input temporário
+          document.body.removeChild(inputTemporario);
+
+          // Alerta o usuário que o texto foi copiado
+          alert("Chave copiada!");
+      }
+  </script>
+  </main>
+</body>
+</html>
