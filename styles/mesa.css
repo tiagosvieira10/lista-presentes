@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #5F7C8E;
+  background-color: #3e5064;
 }
 
 main {
@@ -37,11 +37,10 @@ main {
 
     p {
       max-width: 90vw;
-      border: 1px solid #5F7C8E;
+      border: 1px solid #3e5064;
       border-radius: 10px;
       padding: 10px;
-      font-size: 10px;
-      box-sizing: border-box;
+      font-size: 7.5px;
     }
    
   }
@@ -55,6 +54,6 @@ main {
     margin-top: 10px;
 
     color: white;
-    background-color: #5F7C8E;
+    background-color: #3e5064;
   }
 }
