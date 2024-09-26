@@ -16,7 +16,10 @@
         <p>16 Novembro 2024</p>
         <h2>Tiago & Vitória</h2>
         <p class="versiculo">"foi o Senhor que fez isto e é maravilhoso aos nossos olhos" <br><strong>Salmos 118:23</strong></p>
-        <a href="#presentes">Lista de Presentes</a>
+        <div class="buttons-header">
+          <a href="#presentes">Lista de Presentes</a>
+          <a href="#pix">Pix</a>
+        </div>
       </div>
     </div>
   </header>
@@ -50,6 +53,17 @@
             <button disabled>Comprado</button>
           </a>
         </div>
+
+        <!-- JOGO DE CADEIRAS -->
+
+        <!-- <div class="presente">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_941133-MLB74235871696_022024-F.webp" alt="">
+          <h3>Jogo de 6 Cadeiras</h3>
+          <p>R$ 6.520</p>
+          <a href="/pages/cadeiras.html">
+            <button disabled>Presentear</button>
+          </a>
+        </div> -->
 
         <div class="presente-comprado">
           <img src="https://meandhome.fbitsstatic.net/img/p/sofa-4-lugares-ellie-em-veludo-bipartido-e-arredondado-com-almofadas-soltas-siliconadas-e-espuma-d33-soft-73240/260806-11.jpg?w=680&h=453&v=no-change&qs=ignore" alt="">
@@ -97,7 +111,7 @@
         </div>
 
         <div class="presente">
-          <img src="https://moondo.tn/85970-large_default/samsung-43-full-hd-smart-tv-43t5300.jpg" alt="">
+          <img src="https://imgs.casasbahia.com.br/55066183/1g.jpg?imwidth=828" alt="">
           <h3>Smart TV 43" Samsung</h3>
           <p>R$ 1.998</p>
           <a href="/pages/tvQuarto.html">
@@ -127,6 +141,15 @@
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRty6YhULuoNFvmixs4sJxHLyPiC6Agq8QOqw&s" alt="">
           <h3>Mesa de escritório</h3>
           <p>R$ 595</p>
+          <a href="/pages/mesaEscritorio.html">
+            <button>Presentear</button>
+          </a>
+        </div>
+
+        <div class="presente">
+          <img src="https://loja.elements.com.br/cdn/shop/files/cadeira-de-escritorio-elements-vertta-pro-preta_6d181993-1861-401d-a1e6-db5084cffe5e.jpg?v=1718313085&width=600" alt="">
+          <h3>Cadeira Ergonômica</h3>
+          <p>R$ 1.999,00</p>
           <a href="/pages/mesaEscritorio.html">
             <button>Presentear</button>
           </a>
@@ -356,10 +379,41 @@
             <button>Presentear</button>
           </a>
         </div>
-
+      </div>
     </section>        
       
-    </div>
+    <section id="pix" class="pix">
+      <h3>Presentear com Pix</h3>
+      <span>Clique para copiar chave pix</span>
+      <p id="textoParaCopiar">87992438502</p>
+      <button onclick="copiarTexto()">Copiar Chave Pix</button>
+      <span class="chave-pix">Tiago Silva Vieira <br> Chave Pix - Telefone <br>Banco Inter</span>
+    </section>
+    <script>
+      function copiarTexto() {
+          // Seleciona o elemento de texto
+          var texto = document.getElementById("textoParaCopiar").innerText;
+
+          // Cria um elemento de input temporário
+          var inputTemporario = document.createElement("input");
+          inputTemporario.value = texto;
+          document.body.appendChild(inputTemporario);
+
+          // Seleciona o conteúdo do input temporário
+          inputTemporario.select();
+          inputTemporario.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+          // Copia o texto selecionado para a área de transferência
+          document.execCommand("copy");
+
+          // Remove o input temporário
+          document.body.removeChild(inputTemporario);
+
+          // Alerta o usuário que o texto foi copiado
+          alert("Chave copiada!");
+      }
+  </script>
+
   </main>
 </body>
 </html>

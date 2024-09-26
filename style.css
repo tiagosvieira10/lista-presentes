@@ -59,31 +59,36 @@ header {
       font-size: 40px;
     }
 
-    a {
+    .buttons-header {
       display: flex;
-      align-items: center;
-      justify-content: center;
-  
-      margin: 25px;
+      flex-direction: column;
+      padding: 2rem;
 
-      width: 90%;
-      text-decoration: none;
-      color: white;
-      font-weight: 700;
-      padding: 20px;
-      background-color: #3e5064;
-      border-radius: 10px; 
+      gap: 1rem;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        padding: 20px 60px;
+        background-color: #3e5064;
+        border-radius: 10px; 
+      }
     }
   }
 }
 
 main {
-  background-color:white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
+  gap: 2rem;
 
   .lista-presentes {
     display: flex;
@@ -91,6 +96,8 @@ main {
     align-items: center;
     justify-content: center;
     max-width: 900px;
+    background-color:white;
+
 
     flex-wrap: wrap;
     gap: 15px;    
@@ -144,6 +151,7 @@ main {
     flex-direction: column;
     width: 160px;
     height: 260px;
+    opacity: 0.5;
 
     border: 1px solid #680000;
   
@@ -194,6 +202,51 @@ main {
 
       width: 100%;
     }
+  }
+
+  .pix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    gap: 0.1rem;
+    
+    padding: 8rem 2rem;
+    
+    background-color: #3E5064;
+
+    p {
+      display: none;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      color: white;
+    }
+    
+    span {
+      font-size: 0.8rem;
+      color: white;
+      text-align: center;
+    }
+
+    button {
+      padding: 1rem 4rem;
+      border-radius: 10px;
+      border: none;
+      margin: 3rem 0 1rem 0;
+      
+      font-weight: 700;
+      color: #3E5064;
+    }
+
+    .chave-pix {
+      color: #B3C3D5;
+    }
+
+
   }
 }
 
